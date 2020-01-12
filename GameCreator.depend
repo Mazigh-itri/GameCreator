@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1578744166 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/main.cpp
+	<iostream>
+
+1578787416 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/Board.cpp
+	"Board.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1578788840 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/Board.h
+	"Pawn.h"
+	"Oueurj.h"
+	"Streumons.h"
+	"Reumus.h"
+	"Diams.h"
+	<iostream>
+
+1578780629 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/Pawn.h
+
+1578780257 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/BoardItem.cpp
+	"BoardItem.h"
+
+1578780231 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/BoardItem.h
+	"Board.h"
+
+1578786820 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/BoardsList.cpp
+	"BoardsList.h"
+	"BoardItem.h"
+
+1578779140 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/BoardsList.h
+	"BoardItem.h"
+
+1578778588 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/Oueurj.cpp
+	"Oueurj.h"
+
+1578774911 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/Oueurj.h
+	"Oueurj.h"
+	"Pawn.h"
+
+1578780716 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/Pawn.cpp
+	"Pawn.h"
+
+1578781199 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/Reumus.cpp
+	"Reumus.h"
+
+1578781176 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/Reumus.h
+	<Pawn.h>
+
+1578780997 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/Streumons.cpp
+	"Streumons.h"
+
+1578780953 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/Streumons.h
+	<Pawn.h>
+
+1578781322 /home/benmazouza/Desktop/M1/C/projet/GameCreator/include/Diams.h
+	<Pawn.h>
+
+1578781332 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/Diams.cpp
+	"Diams.h"
+
