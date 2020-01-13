@@ -9,13 +9,12 @@ Board::Board()
 }
 Board::Board(const char *path){
 ifstream file(path);
-    if(file)
+if(file)
     {
         int COLUMNS,ROWS,LEVEL;
         char* word;
-        while(!file.eof())
+        while(file>>word)
         {
-            file>>word;
             if(word=="COLUMNS:"){
                 file>>COLUMNS;
                 this->columns=COLUMNS;
@@ -45,25 +44,33 @@ ifstream file(path);
                     switch(pawn){
                     case 'j':
                         this->board[i][j]=Oueurj(i,j);
+                        this->board[i][j].setLabelOfPawn('j');
                         break;
                     case 's':
                         this->board[i][j]=Streumons(i,j);
+                        this->board[i][j].setLabelOfPawn('s');
                         break;
                     case 'x':
                         this->board[i][j]=Reumus(i,j);
+                        this->board[i][j].setLabelOfPawn('x');
                         break;
                     case '$':
                         this->board[i][j]=Diams(i,j);
+                        this->board[i][j].setLabelOfPawn('$');
                         break;
-
+                    default:
+                        this->board[i][j]=Pawn(i,j);
+                        this->board[i][j].setLabelOfPawn(' ');
                     }
-
                 }
                 break;
             }
 
         }
 }
+else{
+        cout << "Error opening input file in :\n" << path <<  endl;
+    }
 }
 Board::~Board()
 {
@@ -76,6 +83,18 @@ return this->rows;
 int Board::getColumns() const
 {
 return this->columns;
+}
+int Board::getLevel() const
+{
+return this->level;
+}
+int Board::getNbrOfDiams() const
+{
+return this->nbrOfDiams;
+}
+int Board::getNbrOfGeurChars() const
+{
+return this->nbrOfGeurChars;
 }
 
 
@@ -108,4 +127,28 @@ ostream &operator<<(ostream &o,const Board &b) {
  }
  return o<<"";
 }
+Pawn **Board::getBoard(){
+    return this->board;
+}
+void Board::displayBoard(){
+    cout << "Level: "<< this->getLevel() << endl;
+    cout << "Diams: "<< endl;
+    cout << "Teleporteurs: "<< endl;
+    for(int i=0;i<rows;i++)
+        for(int j=0;j<columns;j++){
+           //switch(getBoard()[i][j]->getLabelOfPawn()){
+               // case 'j':
+               if (this->board[i][j].getLabelOfPawn()== ' '){
+                    cout << this->board[i][j].getLabelOfPawn() << ' ';
+               }
+               else{
+                    this->board[i][j].setLabelOfPawn(' ');
+                    cout << this->board[i][j].getLabelOfPawn() << ' ';
+               }
+
+            }
+            cout << endl;
+
+        }
+
 

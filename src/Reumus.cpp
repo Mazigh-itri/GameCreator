@@ -1,6 +1,10 @@
-#include "Reumus.h"
+#include "Reumus.hpp"
 
-Reumus::Reumus(int x,int y): Pawn(pos_x,pos_y)
+Reumus::Reumus()
+{
+    //ctor
+}
+Reumus::Reumus(int x, int y): Pawn(pos_x,pos_y)
 {
     //ctor
 }
@@ -8,7 +12,4 @@ Reumus::Reumus(int x,int y): Pawn(pos_x,pos_y)
 Reumus::~Reumus()
 {
     //dtor
-}
-bool Reumus::moveAuthorisation(int offset_x,int offset_y){
-    return false;
 }

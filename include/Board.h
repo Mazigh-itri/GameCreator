@@ -2,8 +2,8 @@
 #define BOARD_H
 #include "Pawn.h"
 #include "Oueurj.h"
-#include "Streumons.h"
-#include "Reumus.h"
+#include "Streumons.hpp"
+#include "Reumus.hpp"
 #include "Diams.h"
 #include <iostream>
 using namespace std;
@@ -18,7 +18,11 @@ class Board
         int getLevel()const;
         int getRows()const;
         int getColumns()const;
+        int getNbrOfDiams() const;
+        int getNbrOfGeurChars() const;
+        Pawn **getBoard();
         bool operator<(const Board &) const;
+        void displayBoard();
 
 
         //Board &operator=(string path) { this->x = x; return *this; }
@@ -33,6 +37,8 @@ class Board
         int columns=-1;
         int rows=-1;
         int level=-1;
+        int nbrOfDiams = 0;
+        int nbrOfGeurChars = 0;
         Pawn **board;
 
 };

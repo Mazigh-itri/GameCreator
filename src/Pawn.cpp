@@ -26,6 +26,12 @@ int Pawn::getY() const
 {
     return this->pos_y;
 }
+char Pawn::getLabelOfPawn(){
+    return this->labelOfPawn;
+}
+void Pawn::setLabelOfPawn(char c){
+    this->labelOfPawn=c;
+}
 int Pawn::moveto(int offset_x,int offset_y) {
     if(moveAuthorisation(offset_x,offset_y)){
         this->pos_x+=offset_x;

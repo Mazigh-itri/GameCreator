@@ -59,3 +59,66 @@
 1578781332 source:/home/benmazouza/Desktop/M1/C/projet/GameCreator/src/Diams.cpp
 	"Diams.h"
 
+1578948204 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/main.cpp
+	<iostream>
+
+1578948204 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/BoardItem.cpp
+	"BoardItem.h"
+
+1578948204 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/BoardItem.h
+	"Board.h"
+
+1578948728 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/Board.h
+	"Pawn.h"
+	"Oueurj.h"
+	"Streumons.hpp"
+	"Reumus.hpp"
+	"Diams.h"
+	<iostream>
+
+1578949190 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/Pawn.h
+
+1578949156 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/Oueurj.h
+	"Oueurj.h"
+	"Pawn.h"
+
+1578949384 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/Streumons.hpp
+	"Pawn.h"
+
+1578949358 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/Reumus.hpp
+	"Pawn.h"
+
+1578948204 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/Diams.h
+	<Pawn.h>
+
+1578948204 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/BoardsList.cpp
+	"BoardsList.h"
+	"BoardItem.h"
+
+1578948204 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/BoardsList.h
+	"BoardItem.h"
+
+1578948417 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/Board.cpp
+	"Board.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1578949088 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/Diams.cpp
+	"Diams.hpp"
+
+1578949500 /home/djamel/Documents/Master_1/LAO/Projet/GameCreator/include/Diams.hpp
+	<Pawn.h>
+
+1578948455 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/Oueurj.cpp
+	"Oueurj.h"
+
+1578948473 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/Pawn.cpp
+	"Pawn.h"
+
+1578949037 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/Reumus.cpp
+	"Reumus.hpp"
+
+1578949021 source:/home/djamel/Documents/Master_1/LAO/Projet/GameCreator/src/Streumons.cpp
+	"Streumons.hpp"
+
